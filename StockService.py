@@ -1,5 +1,6 @@
 from urllib import request
 import json
+from config import apikey
 
 class StockService:
     def __init__(self, symbol, apikey):
@@ -28,7 +29,5 @@ class StockDataPoint:
         print(sentence)
 
 
-
-myApiKey = ''
-service = StockService('AAPL', '')
+service = StockService('AAPL', apikey)
 
